@@ -112,7 +112,7 @@
   .copy-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
   .lang-switch{
-    position:fixed;top:calc(18px + env(safe-area-inset-top));right:calc(18px + env(safe-area-inset-right));display:flex;gap:4px;
+    position:fixed;top:max(56px,calc(env(safe-area-inset-top) + 14px));right:max(16px,env(safe-area-inset-right));display:flex;gap:4px;
     background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:4px;z-index:40;
   }
   .lang-btn{
@@ -120,7 +120,7 @@
     font-size:11px;letter-spacing:.08em;padding:7px 13px;border-radius:16px;cursor:pointer;transition:all .15s;
   }
   .lang-btn.active{background:var(--platinum);color:var(--navy-1)}
-  @media (max-width:520px){.lang-switch{top:calc(10px + env(safe-area-inset-top));right:calc(10px + env(safe-area-inset-right))}.lang-btn{padding:6px 10px;font-size:10.5px}}
+  @media (max-width:520px){.lang-switch{top:max(50px,calc(env(safe-area-inset-top) + 12px));right:max(12px,env(safe-area-inset-right))}.lang-btn{padding:6px 10px;font-size:10.5px}}
 </style>
 </head>
 <body>
